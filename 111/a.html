@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试App调用公开在window上的方法</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="utf-8" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="http://r.ytrss.com/mobile/20150518/css/style.css" rel="stylesheet"  type="text/css">
+    <style type="text/css">
+        #domeText{margin:10px;height:60px;line-height:60px;background-color:#fff;text-align:center;}
+        #domeClick,#domeClose,#domeBack{margin:10px;height:32px;line-height:32px;background-color:#d7d7d7;text-align:center;}
+    </style>
+</head>
+<body>
+
+<div id="domeText">请注意这里的变化!</div>
+
+<div id="domeClick">管理</div>
+
+<div id="domeBack">返回</div>
+
+<pre>
+        openAppMeans.openAppClick(); //切换
+        openAppMeans.openAppBack(); //返回
+</pre>
+
+<script type="text/javascript">
+    window.onload = function() {
+
+        var Nodes = [],
+            domeText = 'domeText',
+            domeClick = 'domeClick',
+            domeClose = 'domeClose',
+            domeBack = 'domeBack';
+
+        var demo = function() {
+            this.init();
+        };
+
+        demo.prototype = {
+            init: function() {
+                this.bindEvent();
+            },
+            bindEvent: function() {
+                var self = this;
+                //节点获取
+
+                Nodes[domeText] = document.getElementById(domeText);
+                Nodes[domeClick] = document.getElementById(domeClick);
+                Nodes[domeBack] = document.getElementById(domeBack);
+
+                //事件绑定
+                Nodes[domeClick].addEventListener("click", self.openAppClick);
+
+                Nodes[domeBack].addEventListener("click", self.openAppBack);
+            },
+            openAppClick: function(abc) {
+
+                if (Nodes[domeClick].className) {
+                    Nodes[domeClick].className = '';
+                    Nodes[domeClick].innerHTML = "管理";
+                    Nodes[domeText].innerHTML = '切成保存成功,可以!';
+                } else {
+                    Nodes[domeClick].className = 'click';
+                    Nodes[domeClick].innerHTML = "保存";
+                    Nodes[domeText].innerHTML = '切成管理界面,成功!';
+                }
+                
+                alert(abc);
+            },
+            openAppBack: function() {
+                location.href = 'http://m.yintai.com';
+            }
+        };
+
+        //公开方法
+        window.openAppMeans = new demo();
+
+        // openAppMeans.openAppClick(); //切换
+        // openAppMeans.openAppBack(); //返回
+
+    };
+</script>
+
+</body>
+</html>
