@@ -86,6 +86,20 @@
         // openAppMeans.openAppBack(); //返回
 
     };
+
+
+function sendCommand(cmd,param){
+    var url="testapp:"+cmd+":"+param;
+    document.location = url;
+}
+function clickLink(){
+    sendCommand("alert","11111aaa啦啦?");
+}
+
+    </script>
+<button name="btn" value="Click me!" onclick="clickLink()">我在这里</button>
+
+
 </script>
 
 </body>
