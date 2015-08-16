@@ -32,6 +32,9 @@
 - (IBAction)backBtn:(id)sender {
     [wb stringByEvaluatingJavaScriptFromString:@"openAppMeans.openAppBack()"];
 }
+- (IBAction)goBackBtn:(id)sender {
+    [wb goBack];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,9 +43,8 @@
     wb = [[UIWebView alloc]initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-180)];
     wb.delegate =self;
     [wb loadRequest: [NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"a" withExtension:@"html"]]] ;
+  
     [self.view addSubview:wb];
-    
-    
     
 }
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {

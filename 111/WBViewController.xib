@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -40,12 +40,27 @@
                         <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="wAg-Mv-Lo2"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gh-Is-IvU">
+                    <rect key="frame" x="137" y="497" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Gkc-lS-KaF"/>
+                        <constraint firstAttribute="height" constant="30" id="YvY-wj-36B"/>
+                    </constraints>
+                    <state key="normal" title="回退">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goBackBtn:" destination="-1" eventType="touchUpInside" id="cWS-Lb-24a"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="isk-jg-wC0" secondAttribute="bottom" constant="41" id="FsW-Sc-lzg"/>
                 <constraint firstAttribute="bottom" secondItem="LhD-nL-Oij" secondAttribute="bottom" constant="41" id="VBM-hp-8ca"/>
                 <constraint firstItem="LhD-nL-Oij" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="bZP-Gi-Zhu"/>
+                <constraint firstAttribute="centerX" secondItem="7gh-Is-IvU" secondAttribute="centerX" id="ctg-sK-neg"/>
+                <constraint firstAttribute="bottom" secondItem="7gh-Is-IvU" secondAttribute="bottom" constant="41" id="heJ-yb-LAO"/>
                 <constraint firstAttribute="trailing" secondItem="isk-jg-wC0" secondAttribute="trailing" constant="53" id="sNL-zc-UUE"/>
             </constraints>
             <point key="canvasLocation" x="243" y="263"/>
