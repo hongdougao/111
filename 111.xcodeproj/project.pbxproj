@@ -10,28 +10,40 @@
 		87D254271B7D78C1001F73A3 /* a.html in Resources */ = {isa = PBXBuildFile; fileRef = 87D254261B7D78C1001F73A3 /* a.html */; };
 		87D2542D1B7D8007001F73A3 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2542B1B7D8007001F73A3 /* WBViewController.m */; };
 		87D2542E1B7D8007001F73A3 /* WBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D2542C1B7D8007001F73A3 /* WBViewController.xib */; };
+		87E5B72F1B81B7CA00E22E39 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E5B72D1B81B7CA00E22E39 /* BaseViewController.m */; };
+		87E5B7301B81B7CA00E22E39 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B72E1B81B7CA00E22E39 /* BaseViewController.xib */; };
+		87E5B7341B81B9C600E22E39 /* JsBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E5B7321B81B9C600E22E39 /* JsBridgeViewController.m */; };
+		87E5B7351B81B9C600E22E39 /* JsBridgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B7331B81B9C600E22E39 /* JsBridgeViewController.xib */; };
+		87E5B7371B81BA9100E22E39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E5B7361B81BA9100E22E39 /* UIKit.framework */; };
+		87E5B7391B81BAA000E22E39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E5B7381B81BAA000E22E39 /* CoreGraphics.framework */; };
+		87E5B73B1B81BAAD00E22E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E5B73A1B81BAAD00E22E39 /* Foundation.framework */; };
+		87E5B7421B81BEC300E22E39 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B7401B81BEC300E22E39 /* WebViewJavascriptBridge.js.txt */; };
+		87E5B7431B81BEC300E22E39 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E5B7411B81BEC300E22E39 /* WebViewJavascriptBridge.m */; };
+		87E5B7451B81BF1100E22E39 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 87E5B7441B81BF1100E22E39 /* ExampleApp.html */; };
 		87E869DD1B5500810037759B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E869DC1B5500810037759B /* main.m */; };
 		87E869E01B5500810037759B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E869DF1B5500810037759B /* AppDelegate.m */; };
 		87E869EB1B5500810037759B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E869EA1B5500810037759B /* Images.xcassets */; };
 		87E869EE1B5500810037759B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E869EC1B5500810037759B /* LaunchScreen.xib */; };
-		87E869FA1B5500810037759B /* _11Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E869F91B5500810037759B /* _11Tests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		87E869F41B5500810037759B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87E869CF1B5500810037759B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87E869D61B5500810037759B;
-			remoteInfo = 111;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		87D254261B7D78C1001F73A3 /* a.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = a.html; sourceTree = "<group>"; };
 		87D2542A1B7D8007001F73A3 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		87D2542B1B7D8007001F73A3 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
 		87D2542C1B7D8007001F73A3 /* WBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBViewController.xib; sourceTree = "<group>"; };
+		87E5B72C1B81B7CA00E22E39 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		87E5B72D1B81B7CA00E22E39 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		87E5B72E1B81B7CA00E22E39 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		87E5B7311B81B9C600E22E39 /* JsBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsBridgeViewController.h; sourceTree = "<group>"; };
+		87E5B7321B81B9C600E22E39 /* JsBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsBridgeViewController.m; sourceTree = "<group>"; };
+		87E5B7331B81B9C600E22E39 /* JsBridgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JsBridgeViewController.xib; sourceTree = "<group>"; };
+		87E5B7361B81BA9100E22E39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87E5B7381B81BAA000E22E39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87E5B73A1B81BAAD00E22E39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87E5B73F1B81BEC300E22E39 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		87E5B7401B81BEC300E22E39 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		87E5B7411B81BEC300E22E39 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		87E5B7441B81BF1100E22E39 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 		87E869D71B5500810037759B /* 111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 111.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E869DB1B5500810037759B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E869DC1B5500810037759B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,9 +51,6 @@
 		87E869DF1B5500810037759B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		87E869EA1B5500810037759B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87E869ED1B5500810037759B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		87E869F31B5500810037759B /* 111Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 111Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E869F81B5500810037759B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87E869F91B5500810037759B /* _11Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _11Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,24 +58,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E869F01B5500810037759B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				87E5B73B1B81BAAD00E22E39 /* Foundation.framework in Frameworks */,
+				87E5B7391B81BAA000E22E39 /* CoreGraphics.framework in Frameworks */,
+				87E5B7371B81BA9100E22E39 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87E5B73E1B81BEC300E22E39 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				87E5B73F1B81BEC300E22E39 /* WebViewJavascriptBridge.h */,
+				87E5B7401B81BEC300E22E39 /* WebViewJavascriptBridge.js.txt */,
+				87E5B7411B81BEC300E22E39 /* WebViewJavascriptBridge.m */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
 		87E869CE1B5500810037759B = {
 			isa = PBXGroup;
 			children = (
+				87E5B73A1B81BAAD00E22E39 /* Foundation.framework */,
+				87E5B7381B81BAA000E22E39 /* CoreGraphics.framework */,
+				87E5B7361B81BA9100E22E39 /* UIKit.framework */,
 				87E869D91B5500810037759B /* 111 */,
-				87E869F61B5500810037759B /* 111Tests */,
 				87E869D81B5500810037759B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				87E869D71B5500810037759B /* 111.app */,
-				87E869F31B5500810037759B /* 111Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,10 +101,18 @@
 			children = (
 				87E869DE1B5500810037759B /* AppDelegate.h */,
 				87E869DF1B5500810037759B /* AppDelegate.m */,
+				87E5B72C1B81B7CA00E22E39 /* BaseViewController.h */,
+				87E5B72D1B81B7CA00E22E39 /* BaseViewController.m */,
+				87E5B72E1B81B7CA00E22E39 /* BaseViewController.xib */,
 				87D2542A1B7D8007001F73A3 /* WBViewController.h */,
 				87D2542B1B7D8007001F73A3 /* WBViewController.m */,
 				87D2542C1B7D8007001F73A3 /* WBViewController.xib */,
+				87E5B7311B81B9C600E22E39 /* JsBridgeViewController.h */,
+				87E5B7321B81B9C600E22E39 /* JsBridgeViewController.m */,
+				87E5B7331B81B9C600E22E39 /* JsBridgeViewController.xib */,
+				87E5B7441B81BF1100E22E39 /* ExampleApp.html */,
 				87D254261B7D78C1001F73A3 /* a.html */,
+				87E5B73E1B81BEC300E22E39 /* WebViewJavascriptBridge */,
 				87E869EA1B5500810037759B /* Images.xcassets */,
 				87E869EC1B5500810037759B /* LaunchScreen.xib */,
 				87E869DA1B5500810037759B /* Supporting Files */,
@@ -101,23 +125,6 @@
 			children = (
 				87E869DB1B5500810037759B /* Info.plist */,
 				87E869DC1B5500810037759B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		87E869F61B5500810037759B /* 111Tests */ = {
-			isa = PBXGroup;
-			children = (
-				87E869F91B5500810037759B /* _11Tests.m */,
-				87E869F71B5500810037759B /* Supporting Files */,
-			);
-			path = 111Tests;
-			sourceTree = "<group>";
-		};
-		87E869F71B5500810037759B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				87E869F81B5500810037759B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,24 +149,6 @@
 			productReference = 87E869D71B5500810037759B /* 111.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87E869F21B5500810037759B /* 111Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87E86A001B5500810037759B /* Build configuration list for PBXNativeTarget "111Tests" */;
-			buildPhases = (
-				87E869EF1B5500810037759B /* Sources */,
-				87E869F01B5500810037759B /* Frameworks */,
-				87E869F11B5500810037759B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87E869F51B5500810037759B /* PBXTargetDependency */,
-			);
-			name = 111Tests;
-			productName = 111Tests;
-			productReference = 87E869F31B5500810037759B /* 111Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,10 +161,6 @@
 					87E869D61B5500810037759B = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 3TH2DAAR72;
-					};
-					87E869F21B5500810037759B = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 87E869D61B5500810037759B;
 					};
 				};
 			};
@@ -193,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				87E869D61B5500810037759B /* 111 */,
-				87E869F21B5500810037759B /* 111Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,17 +187,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E5B7351B81B9C600E22E39 /* JsBridgeViewController.xib in Resources */,
 				87E869EE1B5500810037759B /* LaunchScreen.xib in Resources */,
 				87D254271B7D78C1001F73A3 /* a.html in Resources */,
+				87E5B7301B81B7CA00E22E39 /* BaseViewController.xib in Resources */,
+				87E5B7421B81BEC300E22E39 /* WebViewJavascriptBridge.js.txt in Resources */,
 				87E869EB1B5500810037759B /* Images.xcassets in Resources */,
 				87D2542E1B7D8007001F73A3 /* WBViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E869F11B5500810037759B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				87E5B7451B81BF1100E22E39 /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,28 +206,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E869E01B5500810037759B /* AppDelegate.m in Sources */,
+				87E5B7431B81BEC300E22E39 /* WebViewJavascriptBridge.m in Sources */,
+				87E5B72F1B81B7CA00E22E39 /* BaseViewController.m in Sources */,
 				87D2542D1B7D8007001F73A3 /* WBViewController.m in Sources */,
+				87E5B7341B81B9C600E22E39 /* JsBridgeViewController.m in Sources */,
 				87E869DD1B5500810037759B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87E869EF1B5500810037759B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E869FA1B5500810037759B /* _11Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		87E869F51B5500810037759B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87E869D61B5500810037759B /* 111 */;
-			targetProxy = 87E869F41B5500810037759B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		87E869EC1B5500810037759B /* LaunchScreen.xib */ = {
@@ -360,40 +328,6 @@
 			};
 			name = Release;
 		};
-		87E86A011B5500810037759B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = 111Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/111.app/111";
-			};
-			name = Debug;
-		};
-		87E86A021B5500810037759B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = 111Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/111.app/111";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,15 +345,6 @@
 			buildConfigurations = (
 				87E869FE1B5500810037759B /* Debug */,
 				87E869FF1B5500810037759B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87E86A001B5500810037759B /* Build configuration list for PBXNativeTarget "111Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87E86A011B5500810037759B /* Debug */,
-				87E86A021B5500810037759B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WBViewController.h"
+#import "BaseViewController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
-    WBViewController *detail = [[WBViewController alloc]initWithNibName:@"WBViewController" bundle:nil];
+    BaseViewController *detail = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:detail];
 
     
@@ -26,8 +26,7 @@
     self.window.rootViewController = nav;
 
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+     [self.window makeKeyAndVisible];
     return YES;
 }
 
