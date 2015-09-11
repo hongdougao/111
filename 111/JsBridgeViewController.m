@@ -46,6 +46,7 @@
     //动态给js js需要的东西
     [self.bridge registerHandler:@"handleCustom"
                          handler:^(id data, WVJBResponseCallback responseCallback) {
+                             NSLog(@"responsCall Back :%@",responseCallback);
         NSString *str = @"hello js";
         responseCallback(str);
     }];
