@@ -30,7 +30,7 @@
     
 }
 - (IBAction)backBtn:(id)sender {
-    [wb stringByEvaluatingJavaScriptFromString:@"openAppMeans.openAppBack()"];
+    [wb stringByEvaluatingJavaScriptFromString:@"openAppMeans.openAppBack()"];//调用js方法
 }
 - (IBAction)goBackBtn:(id)sender {
     [wb goBack];
@@ -43,6 +43,7 @@
     wb = [[UIWebView alloc]initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT-180)];
     wb.delegate =self;
     [wb loadRequest: [NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"a" withExtension:@"html"]]] ;
+//    [wb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.yintai.com/Event/Baopinjie/Baopinjie.html?storeId=1234"]]];
   
     [self.view addSubview:wb];
     
