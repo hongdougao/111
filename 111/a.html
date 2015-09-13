@@ -109,14 +109,20 @@ function connectWebViewJavascriptBridge(callback)
                                                console.log("Javascript got its response", responseData)
                                                }
                                         )
-                                   bridge.registerHandler('handleCustom' ,function(data, responseCallback) {
-                                                          log('ObjC called testJavascriptHandler with', data)
-                                                          var responseData = { 'Javascript Says':'Right back atcha!' }
-                                                          log('JS responding with', responseData)
-                                                          responseCallback(responseData)
+                                   bridge.registerHandler('handleCustomXXXXXX' ,function(data, responseCallback) {
+                                                          alert("1111")
+<!--                                                          log('ObjC called testJavascriptHandler with', data)-->
+<!--                                                          var responseData = { 'Javascript Says':'Right back atcha!' }-->
+<!--                                                          log('JS responding with', responseData)-->
+<!--                                                          responseCallback(responseData)-->
  
-                                                        }
-                                )
+                                                        })
+                                   
+                                   bridge.callHandler('handleCustomYYYYYY', {'foo': 'bar'}, function(response) {
+                                                      log('JS got response', response)
+                                                      })
+
+                                   }
 
 
 function sendCommand(cmd,param){

@@ -32,8 +32,13 @@
     
     [self.wbView loadRequest: [NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"a" withExtension:@"html"]]] ;
     
+    [self.bridge registerHandler:@"handleCustomYYYYYY" handler:^(id data, WVJBResponseCallback responseCallback) {
+        NSLog(@" handleCustomYYYYYY:%@",data);
+        responseCallback(@"handleCustomAAAAAAY");
+    }];
    }
 - (IBAction)click:(id)sender {
+    //bridge send ： oc发起  在js bridge.init中回调
     [self.bridge send:@"Well hello there"];
     [self.bridge send:[NSDictionary dictionaryWithObject:@"Foo" forKey:@"Bar"]];
     [self.bridge send:@"Give me a response, will you?"
@@ -44,13 +49,20 @@
 - (IBAction)click3Action:(id)sender {
     
     //动态给js js需要的东西
-    [self.bridge registerHandler:@"handleCustom"
-                         handler:^(id data, WVJBResponseCallback responseCallback) {
-                             NSLog(@"responsCall Back :%@",responseCallback);
-        NSString *str = @"hello js";
-        responseCallback(str);
-    }];
+//    [self.bridge registerHandler:@"handleCustom"
+//                         handler:^(id data, WVJBResponseCallback responseCallback) {
+//                             NSLog(@"responsCall Back :%@",responseCallback);
+//        NSString *str = @"hello js";
+//        responseCallback(str);
+//    }];
     
+    //bridge call handler oc发起 在js bridge.registreHandler中回调
+    [self.bridge callHandler:@"handleCustomXXXXXX"
+                        data:nil
+            responseCallback:^(id responseData) {
+                
+                 NSLog(@" (id responseData):%@",responseData);
+    }];
 }
 
  - (void)didReceiveMemoryWarning {
