@@ -31,6 +31,7 @@
 </pre>
 
 <script type="text/javascript">
+ 
     window.onload = function() {
 
         var Nodes = [],
@@ -87,42 +88,7 @@
 
     };
 
-function connectWebViewJavascriptBridge(callback)
-    {
-        if (window.WebViewJavascriptBridge) {
-            callback(WebViewJavascriptBridge)
-        } else {
-            document.addEventListener('WebViewJavascriptBridgeReady', function() {callback(WebViewJavascriptBridge) }, false)
-        }
-    }
-    connectWebViewJavascriptBridge(function(bridge) {
-                                   /* Init your app here */
- 
-                                   bridge.init(function(message, responseCallback) {
-                                               alert('Received message: ' + message)
-                                               if (responseCallback) {
-                                                    responseCallback("Right back atcha")
-                                                    }
-                                               })
-                                   bridge.send('Hello from the javascript')
-                                   bridge.send('Please respond to this', function responseCallback(responseData) {
-                                               console.log("Javascript got its response", responseData)
-                                               }
-                                        )
-                                   bridge.registerHandler('handleCustomXXXXXX' ,function(data, responseCallback) {
-                                                          alert("1111")
-<!--                                                          log('ObjC called testJavascriptHandler with', data)-->
-<!--                                                          var responseData = { 'Javascript Says':'Right back atcha!' }-->
-<!--                                                          log('JS responding with', responseData)-->
-<!--                                                          responseCallback(responseData)-->
- 
-                                                        })
-                                   
-                                   bridge.callHandler('handleCustomYYYYYY', {'foo': 'bar'}, function(response) {
-                                                      log('JS got response', response)
-                                                      })
 
-                                   }
 
 
 function sendCommand(cmd,param){
@@ -134,6 +100,42 @@ function clickLink(){
 }
 
     </script>
+<script>
+ 
+
+function connectWebViewJavascriptBridge(callback) {
+    if (window.WebViewJavascriptBridge) {
+        callback(WebViewJavascriptBridge)
+    } else {
+        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                                  callback(WebViewJavascriptBridge)
+                                  }, false)
+    }
+}
+
+connectWebViewJavascriptBridge(function(bridge) {
+            
+                               bridge.init(function(message, responseCallback) {
+                                           log('JS got a message', message)
+                                           var data = { 'Javascript Responds':'Wee!' }
+                                           log('JS responding with', data)
+                                           responseCallback(data)
+                                           })
+                               
+                 
+                               
+                               bridge.registerHandler('handleCustomXXXXXX', function(data, responseCallback) {
+                                                      alert("handleCustomXXXXXX")
+                                                      log('ObjC called testJavascriptHandler with', data)
+                                                      var responseData = { 'Javascript Says':'Right back atcha!' }
+                                                      log('JS responding with', responseData)
+                                                      responseCallback(responseData)
+                                                      })
+                               
+ 
+                               })
+    </script>
+
 <button name="btn" value="Click me!" onclick="clickLink()">我在这里</button>
 
 
