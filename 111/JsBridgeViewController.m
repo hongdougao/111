@@ -23,6 +23,7 @@
     [WebViewJavascriptBridge enableLogging];
 
     // Do any additional setup after loading the view from its nib.
+#pragma mark js send to oc
     self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.wbView
                                                     handler:^(id data, WVJBResponseCallback responseCallback) {
         NSLog(@"ObjC received message from JS: %@", data);
@@ -57,14 +58,7 @@
 - (IBAction)click3Action:(id)sender {
     
     //动态给js js需要的东西
-//    [self.bridge registerHandler:@"handleCustom"
-//                         handler:^(id data, WVJBResponseCallback responseCallback) {
-//                             NSLog(@"responsCall Back :%@",responseCallback);
-//        NSString *str = @"hello js";
-//        responseCallback(str);
-//    }];
-    
-    //bridge call handler oc发起 在js bridge.registreHandler中回调
+#pragma mark oc send to js and response
     [self.bridge callHandler:@"handleCustomXXXXXX"
                         data:nil
             responseCallback:^(id responseData) {

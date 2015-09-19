@@ -125,27 +125,20 @@ connectWebViewJavascriptBridge(function(bridge) {
                                            })
                                
                  
-                               
+<!--                      js接受oc来的方法-->
                                bridge.registerHandler('handleCustomXXXXXX', function(data, responseCallback) {
                                                       alert("handleCustomXXXXXX")
-                                                      log('ObjC called testJavascriptHandler with', data)
-                                                      var responseData = { 'Javascript Says':'Right back atcha!' }
-                                                      log('JS responding with', responseData)
-                                                      responseCallback(responseData)
+                                                       var responseData = { 'Javascript Says':'Right back atcha!' }
+                                                       responseCallback(responseData)
                                                       })
+                               
+<!--                               js给oc发消息-->
                                var button = document.getElementById('buttons').appendChild(document.createElement('button'))
                                button.innerHTML = 'Send message to ObjC'
                                button.onclick = function(e) {
-                               alert("js start send msg")
-                               e.preventDefault()
-                               alert("js start send msg3")
-
-                               var data = 'Hello from JS button'
-                               alert("js start send msg4")
-
-                            
-
-                               bridge.send(data, function(responseData) {
+                                e.preventDefault()
+                                var data = 'Hello from JS button'
+                                bridge.send(data, function(responseData) {
                                            log('JS got response', responseData)
                                            })
                                alert("js   send msg to obj end")
