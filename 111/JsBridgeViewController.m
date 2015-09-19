@@ -23,19 +23,13 @@
     [WebViewJavascriptBridge enableLogging];
 
     // Do any additional setup after loading the view from its nib.
-//    self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.wbView
-//                                                    handler:^(id data, WVJBResponseCallback responseCallback) {
-//        NSLog(@"ObjC received message from JS: %@", data);
-//        responseCallback(@"Response for message from ObjC");
-//
-//    }];
     self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.wbView
-                                            webViewDelegate:self
                                                     handler:^(id data, WVJBResponseCallback responseCallback) {
-                                                        NSLog(@"ObjC received message from JS: %@", data);
-                                                        responseCallback(@"Response for message from ObjC");
-        
+        NSLog(@"ObjC received message from JS: %@", data);
+        responseCallback(@"Response for message from ObjC");
+
     }];
+ 
     [_bridge registerHandler:@"testObjcCallback"
                      handler:^(id data, WVJBResponseCallback responseCallback) {
         NSLog(@"testObjcCallback called: %@", data);

@@ -99,7 +99,9 @@ function clickLink(){
     sendCommand("alert","11111aaa啦啦?");
 }
 
-    </script>
+</script>
+<button name="btn" value="Click me!" onclick="clickLink()">我在这里</button>
+
 <script>
  
 
@@ -131,12 +133,29 @@ connectWebViewJavascriptBridge(function(bridge) {
                                                       log('JS responding with', responseData)
                                                       responseCallback(responseData)
                                                       })
-                               
- 
-                               })
-    </script>
+                               var button = document.getElementById('buttons').appendChild(document.createElement('button'))
+                               button.innerHTML = 'Send message to ObjC'
+                               button.onclick = function(e) {
+                               alert("js start send msg")
+                               e.preventDefault()
+                               alert("js start send msg3")
 
-<button name="btn" value="Click me!" onclick="clickLink()">我在这里</button>
+                               var data = 'Hello from JS button'
+                               alert("js start send msg4")
+
+                            
+
+                               bridge.send(data, function(responseData) {
+                                           log('JS got response', responseData)
+                                           })
+                               alert("js   send msg to obj end")
+
+                               }
+                               
+                               })
+</script>
+
+<div id='buttons'></div> <div id='log'></div>
 
 
 </script>
